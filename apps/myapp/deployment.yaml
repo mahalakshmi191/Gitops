@@ -1,4 +1,4 @@
-apiVersion: apps/v2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: myapp
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image:  lakshu18/myapp:v2
+        image:  lakshu18/myapp:v1
         ports:
         - containerPort: 3000
